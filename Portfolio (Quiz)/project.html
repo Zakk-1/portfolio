@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title> projects</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="index.html">Portfolio</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="#">Hobbies</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+          <h2 class="title">List of Pages and Activities</h2>
+          
+          <div class="dropdown">
+            <button class="dropdown__button">Lecture Pages</button>
+            <div class="dropdown__content">
+              <ul>
+                <li><a href="lect1.jpg">Intro to Web Design and Components</a></li>
+                <li><a href="lect2 (2).pdf">HTML Structures</a></li>
+                <li><a href="lect3.html">Lists and tables</a></li>
+                <li><a href="lect4.html">Links and Images</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="lect6.jpg">Forms</a></li>
+                <li><a href="lect7.html">Bootstrap</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="dropdown">
+            <button class="dropdown__button">Activities for Prelims </button>
+            <div class="dropdown__content">
+              <ul>
+                <li><a href="developerspage.html">Tags-Web Developer's Page</a></li>
+                <li><a href="List.html">Lists-Table of Contents</a></li>
+                <li><a href="table.html">Table-Image Gallery</a></li>
+                <li><a href="quiz1.html">Table with Images</a></li>
+                <li><a href="prelim exam.html">Casual Summer Pages</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="dropdown">
+            <button class="dropdown__button">Activities for Midterms </button>
+            <div class="dropdown__content">
+              <ul>
+                <li><a href="imagemapping.html">Image and Links- Image Mapping</a></li>
+                <li><a href="midtermquiz.html">Forms and CSS- Admission Form</a></li>
+                <li><a href="midterm exam.html">New Artist Album Proposal</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="dropdown">
+            <button class="dropdown__button">Activities for Finals </button>
+            <div class="dropdown__content">
+              <ul>
+                <li><a href="fig.html">Fig</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color:#018CF1;
+  --primary-color-dark: #00AFF0;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+nav .logo a:hover {
+  color: var(--primary-color-dark);
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.section {
+  background-color: var(--extra-light);
+}
+
+.section__container {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.dropdown__button {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.dropdown__button:hover {
+  background-color: var(--primary-color-dark);
+  transform: rotateX(10deg);
+}
+
+.dropdown__content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  z-index: 1;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translateZ(-1rem);
+}
+
+.dropdown__content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown__content ul li {
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown__content ul li a {
+  padding: 1rem;
+  display: block;
+  color: var(--text-dark);
+  transition: background-color 0.3s ease;
+}
+
+.dropdown__content ul li a:hover {
+  background-color: var(--extra-light);
+}
+
+.dropdown:hover .dropdown__content {
+  display: block;
+}
+
+.dropdown:hover .dropdown__button {
+  transform: rotateX(0);
+}
+</style>
